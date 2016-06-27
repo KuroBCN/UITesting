@@ -33,7 +33,7 @@ class testingUITests: XCTestCase {
     func testExample() {
         
 //        let final  = XCUIApplication().staticTexts.containingType(.StaticText, identifier: "labelIdentifier").element
-        let final  = XCUIApplication().staticTexts["I am a label"]
+        let final  = app.staticTexts["labelIdentifier"]
         XCTAssertEqual(final.label, "I am a label")
     }
 }
